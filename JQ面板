@@ -1,0 +1,11 @@
+1，设计侧面板。（data-position设置面板位置）
+<div data-role="page">
+<div data-role="panel" id="mypanel">
+<a href="#mypanel" data-rel=“close"></a>
+</div>
+<div data-role="header"></div>
+<div data-role="concent">
+<a href="#mypanel" class="ul-btn ui-btn-inline">打开面板</a>
+</div>
+<div data-role="footer"></div>
+</div>
