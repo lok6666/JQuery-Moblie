@@ -1,0 +1,5 @@
+1，jQuery pageinit事件。
+2,jQuery on()事件用于添加事件处理程序。
+$(document).on("pageinit","类，id，标签"，function(){
+jQuery事件。
+});
