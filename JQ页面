@@ -1,0 +1,36 @@
+1，引入文件。
+<link src="" rel="stylesheet" />
+<script src="......js"/>
+<script src=".....min.js"/>
+2,页面结构。
+    <div data-role=“page”> <!-- 页-->
+      <div data-role=“header”> <!-- 标题-->
+                  <h1>Hello HTML5</h1>
+            </div>
+            <div data-role=“content”> <!-- 内容-->
+                  <p>Page content goes here.</p>
+            </div>
+       <div data-role=“footer”> <!-- 页脚-->
+                  <h4>&copy;开源中国社区</h4>
+            </div>
+    </div>
+3，设置外部链接
+<a href="" rel="external"></a>.
+4,设置页面切换效果
+<a href=""data-transition="slide"></a>
+页面切换    描述
+ fade      默认。淡入到下一页
+ flip      从后向前翻转到下一页
+ flow      抛出当前页，进入下一页
+ pop       像弹出窗口一样进入下一页
+ slide     从右到左滑动到下一页
+ slidefade 从右到左滑动并淡入到下一页
+ slideup   从下到上滑动到下一页
+ slidedown 从上到下滑动到下一页 
+ turn      翻到下一页
+ none      没有切换效果
+ 5,后退效果
+ <a  href= ""data-transition="slide" data-direction="reverse">
+
+  
+ 
