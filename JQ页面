@@ -3,7 +3,7 @@
 <script src="......js"/>
 <script src=".....min.js"/>
 2,页面结构。
-    <div data-role=“page”> <!-- 页-->
+  2.2  <div data-role=“page”> <!-- 页-->
       <div data-role=“header”> <!-- 标题-->
                   <h1>Hello HTML5</h1>
             </div>
@@ -14,6 +14,23 @@
                   <h4>&copy;开源中国社区</h4>
             </div>
     </div>
+  2.3
+    data-position="inline/fixed/Fullscreen"头部和尾部可以通过三种方式进行定位
+    Inline - 默认。头部栏和尾部栏与页面内容内联。
+    Fixed - 头部栏和尾部栏固定在页面的顶部和底部。
+    Fullscreen - 与 Fixed 定位模式基本相同，头部栏和尾部栏固定在页面的顶部和底部。工具栏可以滚动出屏幕之外，之后不会自动重新显示，除非点击屏幕。
+  2.4 data-fullscreen="true"全屏定位。
+  2.5导航栏 data-role="navbar"
+      <div data-role="navbar">
+              <ul>
+            <li><a href="#" data-icon="home">首页		</a></li>
+            <li><a href="#" data-icon="star">新闻		</a></li>
+            <li><a href="#" data-icon="search">搜索		</a></li>
+              </ul>
+      </div>
+        2.5.1链接被点击效果。
+        <li><a href="" class="ui-btn-active"></a></li>
+
 3，设置外部链接
 <a href="" rel="external"></a>.
 4,设置页面切换效果
