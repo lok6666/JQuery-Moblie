@@ -31,6 +31,13 @@
  none      没有切换效果
  5,后退效果
  <a  href= ""data-transition="slide" data-direction="reverse">
+ 6，对话框
+ <a href= “#pageTwo"   data-rel="dialog"   data-transition="pop">打开对话框</a> 
+7，页面主主题
+data-theme属性添加到data-role=“page”属性的 div 或者容器中化
+data-theme="b":蓝色
+data-theme="a"黑色
+data-theme="c"黄色
 
   
  
