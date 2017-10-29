@@ -1,0 +1,33 @@
+1，导航按钮
+data-role="button"
+<a href="#pagetwo" data-role="button">
+	访问第二个页面
+</a>
+2,内联按钮
+data-inline="true"
+<a href="#pagetwo" data-role="button" data-inline="true">
+	访问第二个页面
+</a>(按钮不占满一排)
+3，组合按钮
+data-type="horizontal(水平分组)/vertical"
+4，按钮图标
+data-icon="" 
+属性值                描述
+data-icon="arrow-l"  左箭头
+data-icon="arrow-r"  右箭头
+data-icon="delete"   删除
+data-icon="info"     信息
+data-icon="home"     首页
+data-icon="back"     后退
+data-icon="search"   搜索
+data-icon="grid"     网格
+<a href="#" data-role="button" data-icon="search">
+	搜索
+</a>
+5,定位图标
+data-iconpos 属性。
+属性值：顶部(top),右侧(right),左侧(left),底部(botton).
+6,如果不想显示按钮，只想显示图标，需设置 data-iconpos ="notext"
+
+  
+ 
