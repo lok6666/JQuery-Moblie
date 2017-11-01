@@ -1,0 +1,29 @@
+1，可折块添加data-role=“collapsible”
+<div data-role="collapsible">
+  <h1>点击我 - 我可以折叠!</h1>
+  <p>我是可折叠的内容。</p>
+</div>
+2，可折叠块内容可以嵌套。
+  <div data-role=“collapsible">
+    <h1>点击我 - 我可以折叠!</h1>
+    <p>我是被展开的内容。</p>
+    <div data-role="collapsible">
+    <h1>点击我 - 我是嵌套的可折叠块！</h1>
+    <p>我是嵌套的可折叠块中被展开的内容</p>
+    </div>
+  </div>
+3，按钮图标
+   data-collapsed-icon=“arrow-d”(规定按钮图标)
+   data-expend-icon="arrow-u"(内容被展开时按钮图标)
+4,网格布局
+父元素添加ui-grid-a
+子元素添加ui-block-a
+<fieldset class="ui-grid-a">
+    <div class="ui-block-a">
+	<button type="submit" data-theme="e"> 	Cancel</button>
+    </div>
+    <div class="ui-block-b">
+	<button type="submit" data-theme="b"> 	Submit</button>
+    </div>     
+</fieldset>
+
