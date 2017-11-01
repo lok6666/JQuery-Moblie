@@ -1,4 +1,4 @@
-JQ列表
+#JQ列表#
 1,在ul，或者ol里面添加data-role=“listview”。
 2，设置列表圆角，边角。data-inset-“true”。
 2，给li添加data.role=“list-divider”属性实现分组。
@@ -24,3 +24,24 @@ JQ列表
 data-filter=“true”
 data-filter-placeholder="搜索姓名"
 <ul data-role="listview" data-filter="true" data-filter-placeholder="搜索姓名">
+5，
+5.1列表缩略图
+  img标签添加到链接中。
+5.2列表图标
+ img添加ui-li-icon类
+5.3气泡数字
+使用行内元素设置ui-li-count并添加数字。
+#JQ表单#
+      1.1form必须设置method，action属性。自动采用ajax方法提交。
+      1.2每个表单必须设置唯一“id”属性。
+      1.3每个表单元素必须有一个标记。
+      <form method="" action="">
+      <label for="fname">姓名</label>
+      <input type="text" name="fname" id="fname">
+      <input type="submit" data-inline="true" value="提交">
+      </form>
+      1.4隐藏lable
+      <lable class="ui-hidden-accessible">
+      1.5文本输入域
+      <textarea cols="40" rows="8" name="" id=""></textarea>
+
