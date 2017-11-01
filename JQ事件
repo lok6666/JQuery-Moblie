@@ -1,5 +1,78 @@
-1，jQuery pageinit事件。
+1，jQuery pagecreate事件。
 2,jQuery on()事件用于添加事件处理程序。
-$(document).on("pageinit","类，id，标签"，function(){
-jQuery事件。
+$(document).on("pagecreate","类，id，标签"，function(){
+
+jQuery Mobile点击事件。
 });
+3，tap事件用户点击某个元素触发
+$("").on("tap",function(){
+$(this).hide();
+})。
+4，taphold某个事件用户点击超过1秒以上。
+$("").on("taphold",function(){
+$(this).hide();
+})
+5,swipe事件在某个元素上滑动超过30px
+$("").on("swipe",function(){
+$(this).hide();
+})
+  5.1swipeleft向左滑动超过30px
+    $(document).on("pagecreate","#id",function(){
+    $("").on("swipeleft",function(){
+        alert("");
+    });
+    })
+  5.2swiperight向右滑动超过30px
+   $(document).on("pagecreate","#id",function(){
+   $("").on("swiperight",function(){
+       alert("");
+   })
+  })
+jQuery Mobiled滚动事件。
+ 滚动开始
+  1.$(document).on("scrollstart",function(){
+  alert("");
+  })
+   ，滚动结束。
+   $(document).on("scrollend",function(0{
+    alert("");
+   })
+jQuery Mobiled方向事件
+    $(window).on(orientationchange",function(e){ 
+            alert("方向是：" + e.orientation);
+     }); 
+    )
+    portrait（设备被握持的方向是垂直的）
+    landscape（设备被握持的方向是水平的）
+jQuery Mobile页面事件
+ $(document).on("pageinit",function(){
+          alert("触发 pageinit 事件 - 页面已初始化，DOM 已加载，jQuery Mobile 已完成页面增强。")
+        }); 
+        $(document).on("pagebeforecreate",function(){
+          alert("触发 pagebeforecreate 事件 - 页面即将初始化。jQuery Mobile 仍未开始增强页面。");
+        });                     
+ $(document).on("pagecreate",function(){
+          alert("触发 pagecreate 事件 - 已创建页面，但增强未完成。");
+          $(document).on("pageload",function(event,data){
+            alert("触发 pageload 事件！\nURL: " + data.url);
+        });
+          $(document).on("pageloadfailed",function(event,data){
+              alert("抱歉，被请求页面不存在。");
+          });
+          $(document).on("pagebeforeshow","#pagetwo",function(){
+            alert("触发 pagebeforeshow 事件 - 页面二即将显示");
+          });
+          $(document).on("pageshow","#pagetwo",function(){
+            alert("触发 pageshow 事件 - 现在显示页面二");
+          });
+          $(document).on("pagebeforehide","#pagetwo",function(){
+            alert("触发 pagebeforehide 事件 - 页面二即将隐藏");
+          });
+          $(document).on("pagehide","#pagetwo",function(){
+            alert("触发 pagehide 事件 - 现在隐藏页面二");
+          });
+        });
+
+  
+ 
+  
